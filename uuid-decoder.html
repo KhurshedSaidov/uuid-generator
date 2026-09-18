@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>UUID Decoder - Decode UUIDs Online</title>
+
+    <meta
+        name="description"
+        content="Free online UUID decoder. Decode UUIDs and inspect their version, variant, timestamp, hexadecimal value, and individual fields."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <header class="header">
+
+        <div>
+
+            <h1>UUID Decoder</h1>
+
+            <p>
+                Decode UUIDs and inspect their internal fields
+            </p>
+
+        </div>
+
+        <button
+            id="themeButton"
+            class="theme-button"
+        >
+            ☀️
+        </button>
+
+    </header>
+
+
+<div class="page-navigation">
+
+    <a href="index.html">
+        UUID Generator
+    </a>
+
+    <a href="uuid-v4-generator.html">
+        UUID v4
+    </a>
+
+    <a href="uuid-v7-generator.html">
+        UUID v7
+    </a>
+
+    <a href="uuid-validator.html">
+        Validator
+    </a>
+
+</div>
+
+
+    <section
+        class="decoder"
+        id="decoderTool"
+        style="display: block;"
+    >
+
+        <h2>
+            Decode a UUID
+        </h2>
+
+        <p class="decoder-description">
+            Enter a UUID to inspect its version, variant,
+            hexadecimal value, and internal fields.
+        </p>
+
+
+        <textarea
+            id="decoderInput"
+            class="decoder-input"
+            placeholder="Paste a UUID here..."
+        ></textarea>
+
+
+        <button
+            id="decodeButton"
+            class="generate-button"
+        >
+            Decode UUID
+        </button>
+
+
+        <div
+            id="decoderResults"
+            class="decoder-results"
+        ></div>
+
+    </section>
+
+
+    <section class="info">
+
+        <h2>
+            What is a UUID Decoder?
+        </h2>
+
+        <p>
+            A UUID decoder examines the structure of a UUID and
+            displays information encoded inside the identifier.
+            This can include its UUID version, variant, hexadecimal
+            representation, and individual fields.
+        </p>
+
+
+        <h2>
+            UUID Version
+        </h2>
+
+        <p>
+            The UUID version is stored in a specific part of the
+            identifier. Common versions include UUID v1, UUID v4,
+            and UUID v7. The version helps identify how the UUID
+            was generated.
+        </p>
+
+
+        <h2>
+            UUID v7 Timestamp
+        </h2>
+
+        <p>
+            UUID v7 contains a Unix timestamp in its most
+            significant bits. A UUID v7 decoder can therefore
+            extract the timestamp and display the approximate
+            creation time represented by the identifier.
+        </p>
+
+
+        <h2>
+            UUID Variant
+        </h2>
+
+        <p>
+            The UUID variant identifies the layout and interpretation
+            of the UUID fields. Modern UUIDs commonly use the
+            Internet Engineering Task Force UUID variant.
+        </p>
+
+
+        <h2>
+            UUID Hexadecimal Value
+        </h2>
+
+        <p>
+            A UUID contains 128 bits of data, usually represented
+            as 32 hexadecimal characters separated by hyphens.
+            The decoder also displays this raw hexadecimal value
+            without separators.
+        </p>
+
+
+        <h2>
+            Decode UUID Online
+        </h2>
+
+        <p>
+            This UUID decoder processes the identifier directly
+            in your browser. Enter a UUID to inspect its structure
+            without sending the value to a remote server.
+        </p>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

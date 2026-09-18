@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>UUID Validator - Check UUIDs Online</title>
+
+    <meta
+        name="description"
+        content="Free online UUID validator. Check one or multiple UUIDs for valid format, version, and variant instantly."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <header class="header">
+
+        <div>
+
+            <h1>UUID Validator</h1>
+
+            <p>
+                Check UUIDs for valid format instantly
+            </p>
+
+        </div>
+
+        <button
+            id="themeButton"
+            class="theme-button"
+        >
+            ☀️
+        </button>
+
+    </header>
+
+
+<div class="page-navigation">
+
+    <a href="index.html">
+        UUID Generator
+    </a>
+
+    <a href="uuid-v4-generator.html">
+        UUID v4
+    </a>
+
+    <a href="uuid-v7-generator.html">
+        UUID v7
+    </a>
+
+    <a href="uuid-decoder.html">
+        Decoder
+    </a>
+
+</div>
+
+    <section
+        class="validator"
+        id="validatorTool"
+        style="display: block;"
+    >
+
+        <h2>
+            Validate UUIDs
+        </h2>
+
+        <p class="validator-description">
+            Enter one or multiple UUIDs, one per line, to check
+            whether they have a valid UUID format.
+        </p>
+
+
+        <textarea
+            id="validatorInput"
+            class="validator-input"
+            placeholder="Paste UUIDs here, one per line..."
+        ></textarea>
+
+
+        <button
+            id="validateButton"
+            class="generate-button"
+        >
+            Validate UUIDs
+        </button>
+
+
+        <div
+            id="validationResults"
+            class="validation-results"
+        ></div>
+
+    </section>
+
+
+    <section class="info">
+
+        <h2>
+            What is a UUID Validator?
+        </h2>
+
+        <p>
+            A UUID validator checks whether a UUID follows the
+            expected hexadecimal format and contains valid version
+            and variant bits. This can help verify identifiers
+            before storing or processing them in an application.
+        </p>
+
+
+        <h2>
+            Validate Multiple UUIDs
+        </h2>
+
+        <p>
+            You can paste multiple UUIDs into the validator.
+            Enter each UUID on a separate line and the tool will
+            check them individually.
+        </p>
+
+
+        <h2>
+            UUID Format
+        </h2>
+
+        <p>
+            A standard UUID is represented using 32 hexadecimal
+            characters divided into five groups with hyphens.
+            The standard textual representation contains
+            8-4-4-4-12 characters.
+        </p>
+
+
+        <h2>
+            UUID Versions
+        </h2>
+
+        <p>
+            UUIDs can use different versions, including UUID v1,
+            UUID v4, and UUID v7. The version is encoded inside
+            the UUID itself and can be inspected as part of the
+            identifier.
+        </p>
+
+
+        <h2>
+            UUID Validator Online
+        </h2>
+
+        <p>
+            This UUID validator runs directly in your browser.
+            UUIDs entered into the tool are processed locally
+            without requiring a server request.
+        </p>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
