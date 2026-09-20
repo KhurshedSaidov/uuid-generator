@@ -10,11 +10,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>UUID v4 Generator - Generate Random UUIDs Online</title>
+    <title>UUID v7 Generator - Generate UUID v7 Online</title>
 
     <meta
         name="description"
-        content="Free UUID v4 generator. Generate random UUID v4 identifiers online in bulk, copy them, download them, or export them as JSON, CSV, and SQL."
+        content="Free UUID v7 generator. Generate time-ordered UUID v7 identifiers online in bulk, copy them, download them, or export them as JSON, CSV, and SQL."
     >
 
     <meta
@@ -37,10 +37,10 @@
 
         <div>
 
-            <h1>UUID v4 Generator</h1>
+            <h1>UUID v7 Generator</h1>
 
             <p>
-                Generate random UUID v4 identifiers instantly
+                Generate time-ordered UUID v7 identifiers instantly
             </p>
 
         </div>
@@ -57,19 +57,19 @@
 
 <div class="page-navigation">
 
-    <a href="index.html">
+    <a href="index">
         UUID Generator
     </a>
 
-    <a href="uuid-v7-generator.html">
-        UUID v7
+    <a href="uuid-v4-generator">
+        UUID v4
     </a>
 
-    <a href="uuid-validator.html">
+    <a href="uuid-validator">
         Validator
     </a>
 
-    <a href="uuid-decoder.html">
+    <a href="uuid-decoder">
         Decoder
     </a>
 
@@ -85,9 +85,9 @@
 
             <button
                 class="version-button active"
-                data-version="v4"
+                data-version="v7"
             >
-                UUID v4
+                UUID v7
             </button>
 
         </div>
@@ -190,35 +190,50 @@
         <div class="options">
 
             <label>
+
                 <input
                     type="checkbox"
                     id="uppercase"
                 >
+
                 Uppercase
+
             </label>
 
+
             <label>
+
                 <input
                     type="checkbox"
                     id="braces"
                 >
+
                 {Braces}
+
             </label>
 
+
             <label>
+
                 <input
                     type="checkbox"
                     id="noHyphens"
                 >
+
                 No hyphens
+
             </label>
 
+
             <label>
+
                 <input
                     type="checkbox"
                     id="quotes"
                 >
+
                 "Quotes"
+
             </label>
 
         </div>
@@ -297,50 +312,63 @@
     <section class="info">
 
         <h2>
-            What is UUID v4?
+            What is UUID v7?
         </h2>
 
         <p>
-            UUID v4 is a randomly generated Universally Unique
-            Identifier. It uses random data to create a 128-bit
-            identifier and is widely used in databases, APIs,
-            web applications, and distributed systems.
+            UUID v7 is a Universally Unique Identifier format that
+            includes a Unix timestamp together with randomly
+            generated data. This makes UUID v7 useful for systems
+            that need unique identifiers that can also be roughly
+            ordered by creation time.
         </p>
 
 
         <h2>
-            Generate UUID v4 Online
+            Generate UUID v7 Online
         </h2>
 
         <p>
-            Use this UUID v4 generator to create one or thousands
-            of random UUIDs instantly. You can copy the results,
-            download them, or export them as TXT, JSON, CSV, or
-            SQL.
+            Use this UUID v7 generator to create one or thousands
+            of time-ordered UUIDs instantly. You can copy the
+            generated identifiers, download them, or export them
+            as TXT, JSON, CSV, or SQL.
         </p>
 
 
         <h2>
-            UUID v4 Format
+            UUID v7 Format
         </h2>
 
         <p>
-            A standard UUID v4 is represented as 32 hexadecimal
-            characters divided into five groups using hyphens.
-            The UUID version and variant bits are defined according
-            to the UUID specification.
+            UUID v7 contains a timestamp in its most significant
+            bits followed by random data. The UUID version and
+            variant fields identify it as a version 7 UUID.
         </p>
 
 
         <h2>
-            UUID v4 vs UUID v7
+            UUID v7 vs UUID v4
         </h2>
 
         <p>
-            UUID v4 is based on random data, while UUID v7 includes
-            a timestamp. UUID v7 can therefore be useful when
-            identifiers need to be roughly sortable by creation
-            time.
+            UUID v4 is primarily based on random data, while UUID
+            v7 combines a timestamp with random data. Because the
+            timestamp is placed at the beginning of the identifier,
+            UUID v7 values can be useful when identifiers need to
+            be roughly sortable by creation time.
+        </p>
+
+
+        <h2>
+            When to Use UUID v7
+        </h2>
+
+        <p>
+            UUID v7 can be useful for database records, APIs,
+            distributed systems, event data, and other applications
+            where unique identifiers and approximate chronological
+            ordering are both useful.
         </p>
 
     </section>
