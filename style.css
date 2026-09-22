@@ -552,3 +552,12 @@ body {
         box-sizing: border-box;
     }
 }
+
+.intro {
+    max-width: 760px;
+    margin: 12px auto 24px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+}
