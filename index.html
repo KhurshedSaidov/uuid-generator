@@ -473,6 +473,24 @@
                 sortable by creation time.
             </p>
 
+            <h2>
+    UUID v4 vs UUID v7: Which One Should You Use?
+</h2>
+
+<p>
+    UUID v4 is a good choice when you need randomly generated
+    identifiers and do not need them to contain ordering
+    information. UUID v7 is useful when identifiers should also
+    provide approximate chronological ordering based on their
+    creation time.
+</p>
+
+<p>
+    For many applications, UUID v4 is sufficient. UUID v7 can
+    be useful for database records, APIs, events, and distributed
+    systems where time-based ordering can be helpful.
+</p>
+
 
             <h2>
                 Generate UUIDs Online
