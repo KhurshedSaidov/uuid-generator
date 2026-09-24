@@ -478,11 +478,18 @@
 </h2>
 
 <p>
-    UUID v4 is a good choice when you need randomly generated
-    identifiers and do not need them to contain ordering
-    information. UUID v7 is useful when identifiers should also
-    provide approximate chronological ordering based on their
-    creation time.
+    UUID v4 is generated using random data and is one of
+    the most commonly used UUID versions. UUID v7 combines
+    a timestamp with randomly generated data, which makes
+    UUID v7 useful when identifiers need to be roughly
+    sortable by creation time.
+</p>
+
+<p>
+    You can generate both versions using the
+    <a href="uuid-v4-generator">UUID v4 Generator</a>
+    and
+    <a href="uuid-v7-generator">UUID v7 Generator</a>.
 </p>
 
 <p>
@@ -505,16 +512,20 @@
             </p>
 
 
-            <h2>
-                Validate and Decode UUIDs
-            </h2>
+      <h2>
+    Validate and Decode UUIDs
+</h2>
 
-            <p>
-                The UUID Validator lets you check whether a UUID has
-                a valid format. The UUID Decoder provides additional
-                information such as the UUID version, variant, raw
-                hexadecimal value, and timestamp when available.
-            </p>
+<p>
+    The
+    <a href="uuid-validator">UUID Validator</a>
+    lets you check whether a UUID has a valid format.
+    The
+    <a href="uuid-decoder">UUID Decoder</a>
+    provides additional information such as the UUID
+    version, variant, raw hexadecimal value, and timestamp
+    when available.
+</p>
 
         </section>
 
