@@ -390,6 +390,35 @@
             ordering are both useful.
         </p>
 
+        <h2>
+    UUID v7 and Timestamp Ordering
+</h2>
+
+<p>
+    UUID v7 places a Unix timestamp in the most significant
+    part of the identifier. As a result, UUID v7 values generated
+    at different times can be approximately ordered by their
+    creation time.
+</p>
+
+<p>
+    This can be useful for database records, event data, logs,
+    and distributed systems where identifiers may also benefit
+    from time-based ordering.
+</p>
+
+        <h2>
+    Generate Multiple UUID v7 Values
+</h2>
+
+<p>
+    This generator can create up to 10,000 UUID v7 values at once.
+    You can copy the generated identifiers, download them as a text
+    file, or export them as JSON, CSV, or SQL. Formatting options
+    are available for uppercase characters, braces, quotes, and
+    removing hyphens.
+</p>
+
         <p>
     Need a randomly generated identifier instead?
     Try the <a href="uuid-v4-generator">UUID v4 Generator</a>.
